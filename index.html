@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>ClipStack - Free Online Text Cleaner & Multi-Paste Clipboard Tool</title>
+    <meta name="description" content="ClipSandbox is a free, private, client-side text manipulation tool. Remove extra spaces, delete duplicates, convert to SQL list, and use keyboard shortcut Alt+C for fast sequential copying. Works offline in browser.">
+    <meta name="keywords" content="text cleaner, remove spaces, remove duplicates, sql list converter, uppercase converter, clipboard tool, multi paste, text manipulation, online text editor, free text tools, browser based text editor, text processing, string tools, line breaker remover, text formatting, copy paste tool, clipboard manager">
+    <meta name="author" content="ClipSandbox">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="ClipSandbox - Free Online Text Tools">
+    <meta property="og:description" content="Clean text, remove duplicates, convert to SQL, and copy one-by-one with Alt+C. Fully private, works offline.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/clipsandbox">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourdomain.com/clipsandbox">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "ClipSandbox",
+      "applicationCategory": "UtilitiesApplication",
+      "description": "Free, private, client-side text manipulation tool. Remove extra spaces, delete duplicates, convert to SQL list, and use keyboard shortcut Alt+C for fast sequential copying. Works offline in browser.",
+      "operatingSystem": "Works in any modern browser (Chrome, Firefox, Safari, Edge)",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Trim whitespace and remove empty lines",
+        "Remove duplicate lines",
+        "Transform list to comma-separated SQL array",
+        "Sequential multi-paste mode with Alt+C shortcut",
+        "100% local processing - no data leaves browser",
+        "No installation required",
+        "Works offline"
+      ],
+      "keywords": "text cleaner, remove spaces, remove duplicates, sql list converter, uppercase converter, clipboard tool, multi paste, text manipulation, online text editor, free text tools, browser based text editor, text processing, string tools, line breaker remover, text formatting, copy paste tool, clipboard manager",
+      "url": "https://yourdomain.com/clipsandbox",
+      "logo": "https://yourdomain.com/clipsandbox/favicon.ico",
+      "creator": {
+        "@type": "Organization",
+        "name": "ClipSandbox",
+        "url": "https://yourdomain.com"
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ClipStack</h1>
+            <p>Paste text → Clean it → Copy it anywhere</p>
+        </header>
+        
+        <div class="theme-toggle" style="text-align: right; margin-bottom: 10px;">
+            <button id="themeToggle" class="theme-button" aria-label="Toggle dark/light mode" title="Toggle light/dark mode">🌙</button>
+        </div>
+        
+        <!-- Ad Zone 1: Media.net Leaderboard (728x90) -->
+        <div class="ad-slot" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="1111111111">
+            <!-- Ad placeholder -->
+        </div>
+        
+        <main class="workspace">
+            <!-- Input Panel -->
+            <section class="panel">
+                <h2>Your Text</h2>
+                <textarea id="rawInput" placeholder="Paste your text here..."></textarea>
+                
+                <div class="controls">
+                    <button id="trimBtn" title="Remove leading/trailing spaces from each line and delete empty lines">Remove Extra Spaces</button>
+                    <button id="dedupeBtn" title="Remove duplicate lines and keep only unique entries">Remove Duplicates</button>
+                    <button id="sqlBtn" title="Convert list to SQL array format: 'item1', 'item2', 'item3'">Make SQL List</button>
+                </div>
+            </section>
+            
+            <!-- Output Panel -->
+            <section class="panel">
+                <h2>Result</h2>
+                <textarea id="output" readonly placeholder="Your result will show here..."></textarea>
+            </section>
+        </main>
+        
+        <!-- Queue Section -->
+        <section class="queue-section">
+            <h2>Copy Items One-by-One</h2>
+            <button id="commitBtn" title="Add all lines to the sequential copy queue">Add to Queue</button>
+            
+            <div class="queue-display">
+                <ul id="queueList"></ul>
+                <div id="queueStatus"></div>
+            </div>
+            
+            <p class="shortcut-hint">Press <kbd>Alt+C</kbd> to copy the next item</p>
+        </section>
+
+        <!-- AdSense Zone 2 -->
+        <div class="ad-slot" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="2222222222">
+            <!-- Ad placeholder -->
+        </div>
+
+        <footer>
+            <p><small>All processing stays on your computer - nothing is sent over the internet</small></p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

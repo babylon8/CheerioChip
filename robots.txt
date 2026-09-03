@@ -1,0 +1,24 @@
+# ClipSandbox robots.txt
+# https://www.robotstxt.org/
+
+User-agent: *
+Allow: /
+
+# Sitemap locations
+Sitemap: https://yourdomain.com/clipsandbox/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 10
+
+# Disallow sensitive areas (none yet, but good practice)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+
+# Bing specific
+User-agent: Bingbot
+Crawl-delay: 10
