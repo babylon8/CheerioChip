@@ -1,7 +1,7 @@
-# ClipStack Marketing Plan
+# CheerioChip Marketing Plan
 
 ## Overview
-ClipStack is a free, local-only text manipulation tool with multi-paste clipboard functionality. Target audience: administrators, developers, data-entry professionals.
+CheerioChip is a free, local-only text manipulation tool with multi-paste clipboard functionality. Target audience: administrators, developers, data-entry professionals.
 
 ---
 
@@ -86,18 +86,18 @@ Why this works: it describes the workflow in 3 steps; shows the result (copy to 
 
 1. **Submit to BetaList**
    - Go to [betalist.com/submit](https://betalist.com/submit)
-   - Fill in: Name (ClipStack), Tagline (Paste text → Clean it → Copy it anywhere), Description (one sentence), Website URL
+   - Fill in: Name (CheerioChip), Tagline (Paste text → Clean it → Copy it anywhere), Description (one sentence), Website URL
    - No email needed for basic submission
 
 2. **Submit to AlternativeTo**
    - Go to [alternativeto.net](https://alternativeto.net)
    - Search for a similar tool like "Text Mechanic"
-   - Click "Add alternative" → Fill in ClipStack name, URL, description
+   - Click "Add alternative" → Fill in CheerioChip name, URL, description
    - Select categories: "Online Services", "Text Tools"
 
 3. **Submit to StackShare**
    - Go to [stackshare.io](https://stackshare.io)
-   - Click "Add a Stack" → Search ClipStack → Add your URL and description
+   - Click "Add a Stack" → Search CheerioChip → Add your URL and description
 
 ---
 
@@ -107,7 +107,7 @@ Why this works: it describes the workflow in 3 steps; shows the result (copy to 
 1. Go to [producthunt.com](https://producthunt.com) → Sign up (use your email or Google)
 2. Go to [producthunt.com/post/new](https://producthunt.com/post/new)
 3. Fill in:
-   - **Name**: ClipStack
+   - **Name**: CheerioChip
    - **Tagline**: Paste text → Clean it → Copy it anywhere
    - **Description**: Free, local-only text cleaner with multi-paste clipboard queue. No signup, no tracking.
    - **Website**: Your live URL
@@ -143,7 +143,7 @@ Why this works: it describes the workflow in 3 steps; shows the result (copy to 
 ```
 Title: I built a free tool to clean text lists and copy them one-by-one (Alt+C)
 Body:
-I was tired of manually copying each line when updating spreadsheets and databases, so I built ClipStack.
+I was tired of manually copying each line when updating spreadsheets and databases, so I built CheerioChip.
 
 It's fully local — nothing leaves your browser. You paste a list, click "Remove Duplicates" (or "Trim Spaces"), then use Alt+C to copy each item one-by-one.
 
@@ -192,7 +192,7 @@ Try it: https://yourusername.github.io/clipstack
    - Use it to announce new features
 4. **Create 1 SEO page** (optional but recommended):
    - Make a new file called `remove-duplicates.html` in your project
-   - Copy your main page, change title to "Remove Duplicates Online — ClipStack"
+   - Copy your main page, change title to "Remove Duplicates Online — CheerioChip"
    - Add a paragraph explaining when to use this feature
    - Push to GitHub — now you have 2 pages ranking for different searches
 
@@ -202,7 +202,7 @@ Try it: https://yourusername.github.io/clipstack
 
 | Day | Task | Time |
 |-----|------|------|
-| 1-2 | Deploy site to GitHub Pages or Netlify | 30 min |
+| 1-2 | Deploy site to GitHub Pages or Netlify Drop | 30 min |
 | 3-4 | Submit to BetaList, AlternativeTo, StackShare | 20 min |
 | 5-7 | Prepare Product Hunt, email friends | 45 min |
 | 8 | Publish on Product Hunt at 9 AM EST | 30 min |
@@ -221,7 +221,9 @@ Try it: https://yourusername.github.io/clipstack
 ---
 
 ## Notes / Reminders
-- The site uses `ClipStack` branding but legacy meta references to `ClipSandbox` — update meta if needed
+- The site uses `CheerioChip` branding but legacy meta references to `ClipSandbox` — update meta if needed
 - All ad placeholders are commented out; uncomment when ready to serve ads
 - Dark/light mode toggle is already implemented — no extra work needed for UX polish
 - The tagline is set to: **"Paste text → Clean it → Copy it anywhere"**
+- **Meta tag fix needed**: Update meta name="description" and meta name="keywords" in index.html to say "CheerioChip" instead of "ClipSandbox"
+- **GitHub Pages**: After pushing files, go to Settings → Pages → Source: Deploy from a branch → main → /(root) → Save. Site will be live at https://babylon8.github.io/CheerioChip
