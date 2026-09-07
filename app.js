@@ -86,6 +86,32 @@ function toUpperCase(text) {
     return text.toUpperCase();
 }
 
+// New function: Parse text into name:value rows
+function parseKeyValue(text) {
+    // Split by newlines first
+    const lines = text.split('\n').map(line => line.trim()).filter(line => line !== '');
+    const pairs = [];
+    
+    lines.forEach(line => {
+        // Try to split by " : " (space colon space) pattern
+        // But be careful: values may contain spaces
+        // Strategy: find the last ": " that's followed by content
+        const match = line.match(/^(.+?)\s*:\s*(.*)$/);
+        if (match) {
+            const key = match[1].trim();
+            const value = match[2].trim();
+            if (key && value) {
+                pairs.push(`${key}: ${value}`);
+            }
+        } else {
+            // If no colon found, just add the line as-is
+            pairs.push(line);
+        }
+    });
+    
+    return pairs.join('\n');
+}
+
 // ==== BUTTON HANDLERS ====
 trimBtn.addEventListener('click', () => {
     output.value = trimAndRemoveEmptyLines(rawInput.value);
@@ -101,6 +127,12 @@ sqlBtn.addEventListener('click', () => {
 
 upperBtn.addEventListener('click', () => {
     output.value = toUpperCase(rawInput.value);
+});
+
+parseBtn.addEventListener('click', () => {
+    const text = output.value.trim() || rawInput.value.trim();
+    if (!text) return;
+    output.value = parseKeyValue(text);
 });
 
 // ==== QUEUE MANAGEMENT ====
