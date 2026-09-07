@@ -5,6 +5,7 @@ const trimBtn = document.getElementById('trimBtn');
 const dedupeBtn = document.getElementById('dedupeBtn');
 const sqlBtn = document.getElementById('sqlBtn');
 const upperBtn = document.getElementById('upperBtn');
+const parseBtn = document.getElementById('parseBtn');
 const commitBtn = document.getElementById('commitBtn');
 const queueList = document.getElementById('queueList');
 const queueStatus = document.getElementById('queueStatus');
